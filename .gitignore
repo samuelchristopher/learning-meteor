@@ -1,7 +1,19 @@
 
-# Created by https://www.gitignore.io/api/eteorjs,node,emacs
+# Created by https://www.gitignore.io/api/meteorjs,node,windows,emacs
 
-#!! ERROR: eteorjs is undefined. Use list command to see defined gitignore types !!#
+### MeteorJS ###
+# default meteor build and local packages
+.meteor/local
+
+# meteor settings file
+settings.json
+
+# meteor build output files
+*.tar.gz
+
+# general swp files from vim
+*.swp
+
 
 ### Node ###
 # Logs
@@ -38,6 +50,27 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+
+
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
 
 
 ### Emacs ###
