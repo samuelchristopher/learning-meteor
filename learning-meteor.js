@@ -5,6 +5,19 @@ if (Meteor.isClient) {
     resolutions: () => {
       return Resolutions.find();
     }
+  });
+
+  Template.body.events({
+    'submit .new-resolution': (event) => {
+      event.preventDefault();
+      let title = event.target.title.value;
+      Resolutions.insert({
+        title: title,
+        createdAt: new Date()
+      });
+
+      event.target.title.value = '';
+    }
   })
 }
 
